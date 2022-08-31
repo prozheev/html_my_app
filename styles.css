@@ -49,8 +49,68 @@
   padding: 10px;
   margin: 10px;
   /* background: aqua; */
+  background-image: url(https://s1.1zoom.ru/prev/597/Gold_Coins_Ingots_596136_600x337.jpg);
+  /* height: 100%; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
 }
 
+.button {
+  padding: 15px 30px;
+  border: 2px solid rgb(241, 21, 21);
+  background-color: rgb(238, 155, 87);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color .5s;
+  margin-top: 20px;
+  border-radius: 10px;
+  /* display: inline-block; */
+  animation: glowing 1300ms infinite;
+  width: 90%;
+  /* display: flex;
+  justify-content: center;
+  text-align: center; */
+
+}
+
+.button2 {
+  padding: 15px 30px;
+  border: 2px solid rgb(241, 21, 21);
+  background-color: rgb(238, 155, 87);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color .5s;
+  /* margin-top: 20px; */
+  border-radius: 10px;
+  /* display: inline-block; */
+  /* animation: glowing 1300ms infinite; */
+  /* width: 10%; */
+  /* display: flex;
+  justify-content: center;
+  text-align: center; */
+  /* margin-left: 10px; */
+  /* padding-block: 10; */
+  text-align: center;
+
+}
+
+@keyframes glowing {
+  0% { background-color: rgb(241, 21, 21); box-shadow: 0 0 3px rgb(241, 21, 21); }
+  50% { background-color: #49e819; box-shadow: 0 0 10px #49e819; }
+  100% { background-color: rgb(241, 21, 21); box-shadow: 0 0 3px rgb(241, 21, 21); }
+  }
+
+.button:hover {
+  background-color: rgb(241, 21, 21);
+}
+
+.button2:hover {
+  background-color: rgb(241, 21, 21);
+}
 /* .link {
     width: 100px;
     height: 50px;
@@ -91,17 +151,23 @@ header {
 
 h1 {
     text-align: center;
-    color: blanchedalmond;
+    /* color: rgb(61, 59, 56); */
     line-height: 50px;
     margin: 0;
+    background: rgba(219, 219, 205, 0.55);
   }
 
+span {
+   color: rgb(247, 45, 18);
+   background: rgba(255, 251, 11, 0.55);
+  }
   
 h3 {
-    text-align: right;
-    color: blanchedalmond;
-    line-height: 100px;
+    text-align: center;
+    color: rgb(24, 23, 23);
+    /* line-height: 100px; */
     margin: 0;
+    background-image: url(https://s1.1zoom.ru/prev/597/Gold_Coins_Ingots_596136_600x337.jpg);
     /* background: aqua; */
     /* background-color: aqua; */
   }
@@ -131,3 +197,13 @@ section {
     /* background-color: rgba(33, 33, 33, .3); */
   }
 
+  input {
+    width: 200px;
+    height: 25px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 10px;
+    outline: none;
+    margin: 10px;
+  
+  }

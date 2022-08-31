@@ -6,19 +6,32 @@
       My_app
     </title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="modal.css"/>
 
     <!-- <style>
       body {
       background-image: url(https://mirpozitiva.ru/wp-content/uploads/2019/11/1472042660_10.jpg); /* Путь к фоновому изображению */
       }
      </style> -->
+     <link rel="import" href="index2.html">
 
   </head>
   
   <body>
+    <script>
+document.onclick = function (event) {
+  console.log('EVENT', event)
+}
+
+
+    </script>
+    
 
     <div class="page">
+    <script src="alert.js"></script>
+    <!-- <script src="modal.js"></script> -->
     <br /> 
+
     <h1>
       Мой сайт
     </h1>
@@ -27,11 +40,41 @@
         <section>
           <div class ="start">
             <h2>
-              На сайте нет ничего интересного, но вы всегда можете воспользоваться другими ресурсами ниже:
+              Поздравляем! Вы посетитель № <span>7 777 777</span> и Вы победитель!!!
+              <div id="show-modal" class="button">Забрать выигрыш</div>
+                <!-- <button id="show-modal" class="btn">Открыть</button> -->
+                <!-- <iframe src="index2.html" width="1200" height="700"></iframe> -->
+          
+                <script src="modal.js"></script>
+                <script>
+            
+                    (function () {
+                        // создаём модальное окно
+                        var modal = $modal();
+                        // при клике по кнопке #show-modal
+                        modal.setTitle('<h3>Для получения выигрыша, заполните поля ниже:</h3>');
+                        modal.setContent('<iframe src="index2.html" width="100%" height="600pc" scrolling="no"></iframe><article><div class="button2" data-dismiss="modal">Закрыть</div></article>')
+                        // modal.setContent('<div class="button2" data-dismiss="modal">Отмена</div>')
+          
+                        document.querySelector('#show-modal').addEventListener('click', function () {
+                            // отобразим модальное окно
+                            modal.show();
+
+                        
+                        });
+
+                    })();
+                </script>
+                
+              <!-- </div>   -->
             </h2>
           </div>
         </section>
       </div>
+
+      <h1>
+        Наши партнёры:
+      </h1>
 
       <div class="content">
         <section>

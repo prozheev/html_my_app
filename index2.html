@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Form
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="modal.css"/>
+    <!-- <script src="modal.js"></script> -->
+
+  </head>
+  
+  <body>   
+
+
+    <div class="content">
+
+      <script>
+        let events = {
+          name: '',
+          surname: '',
+          phone: '',
+          mail: '',
+        }
+
+        // let values = window.localStorage.setItem('form', events)
+      </script>
+
+      <section>
+
+        <article>
+          <p>Ваше имя:</p>
+          <input id="input" placeholder="Введите имя" />
+        </article>
+ 
+        <script>
+          document.querySelector('#input').addEventListener('input', function(event) {
+            console.log('DATA_nam', event.target.value)
+            events.name = event.target.value
+          })
+        </script>
+
+
+      </section>
+
+      <section>
+
+        <article>
+          <p>Ваша фамилия:</p>
+          <input id="input" class="inputSurn" placeholder="Введите фамилию" />
+        </article>
+
+        <script>
+          document.querySelector('.inputSurn').addEventListener('input', function(event) {
+            console.log('DATA_surn', event.target.value)
+            events.surname = event.target.value
+          })
+        </script>
+        
+      </section>
+
+      <section>
+        <article>
+          <p>Ваш номер телефона:</p>
+          <input id="input" class="inputPhone" placeholder="Введите номер +375..." />
+        </article>
+
+        <script>
+          document.querySelector('.inputPhone').addEventListener('input', function(event) {
+            console.log('DATA_phone', event.target.value)
+            events.phone = event.target.value
+          })
+        </script>
+
+
+      </section>
+
+
+      <section>
+        <article>
+          <p>Ваш e-mail:</p>
+          <input id="input" class="inputEmail" placeholder="Введите e-mail" />
+        </article>
+
+        <script>
+          document.querySelector('.inputEmail').addEventListener('input', function(event) {
+            console.log('DATA_email', event.target.value)
+            events.mail = event.target.value
+          })
+        </script>
+
+      </section>
+
+      <!-- <section> -->
+        <article>
+          <!-- <script>
+            const a = document.getElementById("input-id").value;
+            
+          </script> -->
+        <div class="button2" onclick="alert(events.name + ', регистрация прошла успешно. Ожидайте связи.')"">OK</div>
+        <!-- <div class="button2" onclick="values">Опа</div> -->
+
+        </article>
+
+        <!-- <article>
+        <div class="button2" data-dismiss="modal" onclick="modal.hide()">Отмена</div>
+        <div class="button2" data-dismiss="modal">Отмена</div>
+        <div data-dismiss="modal" class="button2" >Отмена</div>
+
+        <span class="modal__btn-close" data-dismiss="modal" title="Закрыть">×</span>
+
+        </article> -->
+
+      <!-- </section> -->
+
+
+
+    </div>
+  </body>
+</html>
